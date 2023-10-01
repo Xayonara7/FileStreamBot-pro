@@ -16,8 +16,8 @@ from pyrogram.types import ReplyKeyboardMarkup
 if MY_PASS:
             buttonz=ReplyKeyboardMarkup(
             [
-                ["start⚡️","help📚","login🔑","DC"],
-                ["ping📡","status📊","maintainers😎"]
+                ["𝙎𝙏𝘼𝙍𝙏⚡️","𝙃𝙀𝙇𝙋📚","𝘿𝘾"],
+                ["𝙋𝙄𝙉𝙂📡","𝙎𝙏𝘼𝙏𝙐𝙎📊","𝙊𝙒𝙉𝙀𝙍😎"]
                         
             ],
             resize_keyboard=True
@@ -25,8 +25,8 @@ if MY_PASS:
 else:
             buttonz=ReplyKeyboardMarkup(
             [
-                ["start⚡️","help📚","DC"],
-                ["ping📡","status📊","maintainers😎"]
+                ["𝙎𝙏𝘼𝙍𝙏⚡️","𝙃𝙀𝙇𝙋📚","𝘿𝘾"],
+                ["𝙋𝙄𝙉𝙂📡","𝙎𝙏𝘼𝙏𝙐𝙎📊","𝙊𝙒𝙉𝙀𝙍😎"]
                         
             ],
             resize_keyboard=True
@@ -34,7 +34,7 @@ else:
 
             
             
-@StreamBot.on_message((filters.command("start") | filters.regex('start⚡️')) & filters.private )
+@StreamBot.on_message((filters.command("start") | filters.regex('𝙎𝙏𝘼𝙍𝙏⚡')) & filters.private )
 async def start(b, m):
     if not await db.is_user_exist(m.from_user.id):
         await db.add_user(m.from_user.id)
@@ -81,7 +81,7 @@ async def start(b, m):
         reply_markup=buttonz)
 
 
-@StreamBot.on_message((filters.command("help") | filters.regex('help📚')) & filters.private )
+@StreamBot.on_message((filters.command("help") | filters.regex('𝙃𝙀𝙇𝙋📚')) & filters.private )
 async def help_handler(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
@@ -118,7 +118,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="__Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ__ [𝐗𝐀𝐘𝐎𝐍𝐀𝐑𝐀](https://t.me/xayoonara).",
+                text="**__Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ__** [𝐗𝐀𝐘𝐎𝐍𝐀𝐑𝐀](https://t.me/xayoonara).",
                 disable_web_page_preview=True)
             return
     await message.reply_text(
