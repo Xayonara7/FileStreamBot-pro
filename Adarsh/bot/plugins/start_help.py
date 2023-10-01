@@ -56,7 +56,7 @@ async def start(b, m):
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
                 photo="https://telegra.ph/file/9d94fc0af81234943e1a9.jpg",
-                caption="<i>𝙹𝙾𝙸𝙽 CHANNEL 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴🔐</i>",
+                caption="<i><b><u>𝙹𝙾𝙸𝙽 CHANNEL 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴🔐</u></b></i>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -77,7 +77,7 @@ async def start(b, m):
     await StreamBot.send_photo(
         chat_id=m.chat.id,
         photo ="https://telegra.ph/file/ca10e459bc6f48a4ad0f7.jpg",
-        caption =f'Hi {m.from_user.mention(style="md")}!,\nI am Telegram File to Link Generator Bot with Channel support.\nSend me any file and get a direct download link and streamable link.!',
+        caption =f'**__Hᴇʏ 😎 {m.from_user.mention(style="md")}\n ɪ Aᴍ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇ Tᴏ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ Wɪᴛʜ Cʜᴀɴɴᴇʟ Sᴜᴘᴘᴏʀᴛ.\nSᴇɴᴅ Mᴇ Aɴʏ Fɪʟᴇ Aɴᴅ Gᴇᴛ A Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ Aɴᴅ Sᴛʀᴇᴀᴍᴀʙʟᴇ Lɪɴᴋ.!__**',
         reply_markup=buttonz)
 
 
@@ -122,14 +122,14 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="""<b> Send me any file or video i will give you streamable link and download link.</b>\n
-<b> I also support Channels, add me to you Channel and send any media files and see miracle✨ also send /list to know all commands""",
+        text="""<b><i>ꜱᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ ᴏʀ ᴠɪᴅᴇᴏ ɪ ᴡɪʟʟ ɢɪᴠᴇ ʏᴏᴜ ꜱᴛʀᴇᴀᴍᴀʙʟᴇ ʟɪɴᴋ 🔗 ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 🔗.</i></b>\n
+<b><i>ɪ ᴀʟꜱᴏ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟꜱ, ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ꜱᴇɴᴅ ᴀɴʏ ᴍᴇᴅɪᴀ ꜰɪʟᴇꜱ ᴀɴᴅ ꜱᴇᴇ ᴍɪʀᴀᴄʟᴇ ✨ ᴀʟꜱᴏ ꜱᴇɴᴅ /list ᴛᴏ ᴋɴᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ</i></b>""",
         
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("👨‍💻 𝘿𝙀𝙑𝙇𝙊𝙋𝙀𝙍", url="https://t.me/xayoonara")],
-                [InlineKeyboardButton("⚡ 𝙐𝙋𝘿𝘼𝙏𝙀𝙎", url="https://t.me/MYFLIIX_2")]
+                [InlineKeyboardButton("👨‍💻 𝐃𝐄𝐕𝐋𝐎𝐏𝐄𝐑", url="https://t.me/xayoonara")],
+                [InlineKeyboardButton("⚡ 𝐔𝐏𝐃𝐀𝐓𝐄𝐒", url="https://t.me/MYFLIIX_2")]
             ]
         )
     )
