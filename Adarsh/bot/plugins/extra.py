@@ -10,7 +10,7 @@ from Adarsh import StartTime
 START_TEXT = """ Your Telegram DC Is : `{}`  """
 
 
-@StreamBot.on_message(filters.regex("maintainers😎"))
+@StreamBot.on_message(filters.regex("𝙊𝙒𝙉𝙀𝙍😎"))
 async def maintainers(b,m):
     try:
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
@@ -22,7 +22,7 @@ async def maintainers(b,m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Developer💻", url=f"https://t.me/xayoonara")
+                                InlineKeyboardButton("𝘿𝙀𝙑𝙇𝙊𝙋𝙀𝙍 👨‍💻", url=f"https://t.me/xayoonara")
                             ]
                         ]
                     ),
@@ -30,7 +30,7 @@ async def maintainers(b,m):
                     disable_web_page_preview=True)
         
 
-@StreamBot.on_message(filters.regex("DC"))
+@StreamBot.on_message(filters.regex("𝘿𝘾"))
 async def start(bot, update):
     text = START_TEXT.format(update.from_user.dc_id)
     await update.reply_text(
@@ -43,14 +43,14 @@ async def start(bot, update):
     
 @StreamBot.on_message(filters.command("list"))
 async def list(l, m):
-    LIST_MSG = "Hi! {} Here is a list of all my commands \n \n 1 . `start⚡️` \n 2. `help📚` \n 3. `login🔑` \n 4. `ping📡` \n 5. `status📊` \n 6. `DC` this tells your telegram dc \n 7. `maintainers😎` "
+    LIST_MSG = "Hi! {} Here is a list of all my commands \n \n 1 . `start⚡️` \n 2. `help📚` \n 3.`ping📡` \n 4. `status📊` \n 5. `DC` this tells your telegram dc \n 6. `Owner😎` "
     await l.send_message(chat_id = m.chat.id,
         text = LIST_MSG.format(m.from_user.mention(style="md"))
         
     )
     
     
-@StreamBot.on_message(filters.regex("ping📡"))
+@StreamBot.on_message(filters.regex("𝙋𝙄𝙉𝙂📡"))
 async def ping(b, m):
     start_t = time.time()
     ag = await m.reply_text("....")
